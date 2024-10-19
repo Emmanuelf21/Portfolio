@@ -10,7 +10,7 @@ body{
 /* cabeçaho da pagina */
 .cabecalho{ 
     width: 100%;
-    height: 280px;
+    height: 320px;
 
     padding-top: 40px;
 
@@ -74,8 +74,8 @@ body{
 
 /* menu lateral e icones de navegação */
 .menu-lateral{
-    height: 260px;
-    width: 50px;
+    height: fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +90,21 @@ body{
     text-decoration: none;
     font-size: 22px;
     color: rgb(76, 43, 226);
+    
+}
+
+.menu-lateral div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 100%;    
+}
+
+.menu-lateral div p{
+    display: none;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .icones{
@@ -108,6 +123,14 @@ body{
     box-shadow: 0px 0px 20px rgb(76, 43, 226);
 }
 
+.icones:hover + *{
+    display: flex;
+    background: linear-gradient(to right, blueviolet, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 20px white;
+}
+
 .icones img{
     width: 35px;
     height: 35px;
@@ -119,6 +142,7 @@ body{
     width: 100%;
     margin: auto;
 }
+
 .sobre h1{
     width: fit-content;
 }
@@ -168,7 +192,7 @@ body{
 
 /* section de projetos */
 .projetos{
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
@@ -192,7 +216,7 @@ body{
     flex-direction: column;
     align-items: center;
     position: relative;
-    
+
 }
 
 .projeto{
@@ -271,6 +295,7 @@ body{
     border-bottom: 2px solid blueviolet;
     
     box-shadow: 0px 0px 30px blueviolet;
+    
     text-shadow: 3px 3px 3px white;
     font-size: 18px;
 }
