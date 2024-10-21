@@ -169,28 +169,31 @@
                 <h1 class="texto-branco">Entre em <h1 class="texto-azul">Contato</h1></h1>
             </div>
             <div class="formulario">
-                <form method="post" action="php/enviaEmail.php">
+                <form action="https://api.staticforms.xyz/submit" method="post">
                     <div class="um-input">
-                        <input type="text" name="nome" id="nome" class="inputs" required autocomplete="off">
-                        <label for="nome">Nome:</label>
+                        <input type="text" name="name" id="nome" class="inputs" required autocomplete="off">
+                        <label for="name">Nome:</label>
                     </div>
                     <div class="um-input">
-                        <input type="text" name="telefone" id="telefone" class="inputs" required autocomplete="off">
-                        <label for="telefone">Telefone para contato:</label>
+                        <input type="text" name="phone" id="telefone" class="inputs" required autocomplete="off">
+                        <label for="phone">Telefone para contato:</label>
                     </div>
                     <div class="um-input">
                         <input type="text" name="email" id="email" class="inputs" required autocomplete="off">
                         <label for="email">E-mail:</label>
                     </div>
                     <div class="um-input">
-                        <input type="text" name="razao" id="razao" class="inputs" required autocomplete="off">
-                        <label for="razao">Motivo do contato:</label>
+                        <input type="text" name="subject" id="razao" class="inputs" required autocomplete="off">
+                        <label for="subject">Motivo do contato:</label>
                     </div>
                     <div class="textarea">
-                        <textarea name="mensagem" id="mensagem" required autocomplete="off"></textarea>
-                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea name="message" id="mensagem" required autocomplete="off"></textarea>
+                        <label for="message">Sua mensagem:</label>
                     </div>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="accessKey" value="eb6124dd-6de4-4ac4-b787-eed3bfe80ffb">
+                    <input type="hidden" name="redirectTo" value="emmanuelfranco.vercel.app">
+                    <div class="btn-enviar"><button type="submit">Enviar</button></div>
                 </form>
             </div>
         </section>
