@@ -2,6 +2,7 @@
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
+
 body{
     margin: 0;
     width: 100%;
@@ -199,6 +200,7 @@ body{
     text-align: justify;
 }
 
+/* Certificados */
 .certificados .imagens-flex{
     display: flex;
     flex-direction: row;
@@ -225,9 +227,11 @@ body{
     filter: brightness(1);
     transform: translateZ(30px);
 }
+
 .certificados .item:hover img{
     filter: opacity(1);
 }
+
 .imagens-flex img{
     width: 220px;
     height: 220px;
